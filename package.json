@@ -13,6 +13,9 @@
   },
   "homepage": "https://github.com/simoneas02/simoneas02.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-stylus": "^2.6.0"
   }
 }
