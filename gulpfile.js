@@ -3,6 +3,7 @@ const pug = require('gulp-pug');
 const stylus = require('gulp-stylus');
 const connect = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
+const babel = require("gulp-babel");
 
 gulp.task('pug', () =>{
   gulp.src('./src/*.pug')
@@ -44,6 +45,10 @@ gulp.task('server', () =>{
   });
 });
 
-
+gulp.task("babel", () =>{
+    gulp.src('./src/assets/scripts/*.js')
+    .pipe(babel())
+    .pipe(gulp.dest('./out/assets/scripts/'));
+});
 
 gulp.task('serve', ['watch','server']);
