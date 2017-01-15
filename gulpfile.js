@@ -1,3 +1,6 @@
+
+// Modules :)
+// ===========================================
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const stylus = require('gulp-stylus');
@@ -5,6 +8,8 @@ const connect = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
 const babel = require("gulp-babel");
 
+// Compile Pug
+// ===========================================
 gulp.task('pug', () =>{
   gulp.src('./src/*.pug')
     .pipe(pug())
@@ -12,6 +17,8 @@ gulp.task('pug', () =>{
     .pipe(connect.reload());
 });
 
+// Stylus features
+// ===========================================
 gulp.task('stylus', () =>{
   gulp.src('./src/assets/styles/*.styl')
     .pipe(stylus({
@@ -21,6 +28,17 @@ gulp.task('stylus', () =>{
     .pipe(connect.reload());
 });
 
+// Babel
+// ===========================================
+gulp.task("babel", () =>{
+    gulp.src('./src/assets/scripts/*.js')
+    .pipe(babel())
+    .pipe(gulp.dest('./out/assets/scripts/'))
+    .pipe(connect.reload());
+});
+
+// Imagemin
+// ===========================================
 gulp.task('imagemin', () =>{
   gulp.src('./src/assets/img/*')
     .pipe(imagemin(
@@ -30,14 +48,17 @@ gulp.task('imagemin', () =>{
     .pipe(connect.reload());
 });
 
-gulp.task('build', ['pug', 'stylus', 'imagemin']);
-
+// Watch
+// ===========================================
 gulp.task('watch', () =>{
   gulp.watch(['./src/*.pug','./src/**/*.pug'], ['pug']);
   gulp.watch(['./src/assets/styles/*.styl'], ['stylus']);
   gulp.watch(['./src/assets/img/*'], ['imagemin']);
+  gulp.watch(['./src/assets/scripts/*.js'], ['babel']);
 });
 
+// Static server
+// ===========================================
 gulp.task('server', () =>{
   connect.server({
     root: './out/',
@@ -45,10 +66,7 @@ gulp.task('server', () =>{
   });
 });
 
-gulp.task("babel", () =>{
-    gulp.src('./src/assets/scripts/*.js')
-    .pipe(babel())
-    .pipe(gulp.dest('./out/assets/scripts/'));
-});
-
+// More Tasks
+// ===========================================
+gulp.task('build', ['pug', 'stylus', 'imagemin', 'babel']);
 gulp.task('serve', ['watch','server']);

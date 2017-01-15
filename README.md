@@ -24,11 +24,11 @@ Go to: [localhost:8080](http://localhost:8080/)
 - Task Runner: [Gulp](http://gulpjs.com/)
 - HTML Template Engine: [Pug](https://pugjs.org/api/getting-started.html)
 - CSS Preprocessor: [Stylus](http://stylus-lang.com/)
+- JS Transpiler: [Babel](http://babeljs.io/)
 
 ## Folders Structure
 
 	.
-	├── README.md
 	├── out/
 	├── src/
 	|   ├── assets/
@@ -40,10 +40,15 @@ Go to: [localhost:8080](http://localhost:8080/)
 	|   ├── layouts/
 	|   |   └── gothic.pug
 	|   └── index.pug
+	├── .babelrc
+	├── .editorconfig
+	├── .gitignore
+	├── gulpfile.js
 	├── gulpfile.js
 	├── package.json
-	├── .editorconfig
-	└── .gitignore
+	├── CONTRIBUTING.md
+	├── LICENSE.md
+	└── README.md
 
 ## Automatic Tasks
 
