@@ -2,6 +2,7 @@
 
 > My personal website.
 
+[![devDependencies Status](https://david-dm.org/simoneas02/simoneas02.github.io/dev-status.svg)](https://david-dm.org/simoneas02/simoneas02.github.io?type=dev)
 ## Run the project locally
 
 **1 -** Clone the project and install the dependencies:
