@@ -3,6 +3,8 @@
 > My personal website.
 
 [![devDependencies Status](https://david-dm.org/simoneas02/simoneas02.github.io/dev-status.svg)](https://david-dm.org/simoneas02/simoneas02.github.io?type=dev)
+[![Travis CI Status](https://travis-ci.org/simoneas02/simoneas02.github.io.svg?branch=master)](https://travis-ci.org/simoneas02/simoneas02.github.io)
+
 ## Run the project locally
 
 **1 -** Clone the project and install the dependencies:
@@ -44,7 +46,7 @@ Go to: [localhost:8080](http://localhost:8080/)
 	├── .babelrc
 	├── .editorconfig
 	├── .gitignore
-	├── gulpfile.js
+	├── .travis.yml
 	├── gulpfile.js
 	├── package.json
 	├── CONTRIBUTING.md
@@ -55,6 +57,7 @@ Go to: [localhost:8080](http://localhost:8080/)
 
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp serve`: Watch the files to build and start a static server.
+- `$ gulp stylint`: Validate Stylus.
 - `$ gulp deploy`: Deploy for gh-pages.
 
 ## Versioning
