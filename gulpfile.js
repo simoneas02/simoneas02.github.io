@@ -7,6 +7,7 @@ const stylus = require('gulp-stylus');
 const connect = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
 const babel = require("gulp-babel");
+const stylint = require('gulp-stylint');
 
 // Compile Pug
 // ===========================================
@@ -26,6 +27,12 @@ gulp.task('stylus', () =>{
     }))
     .pipe(gulp.dest('./out/assets/styles/'))
     .pipe(connect.reload());
+});
+
+gulp.task('stylint', () =>{
+    gulp.src('src/assets/styles/*.styl')
+      .pipe(stylint())
+      .pipe(stylint.reporter());
 });
 
 // Babel
