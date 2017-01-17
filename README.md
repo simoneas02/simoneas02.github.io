@@ -5,7 +5,12 @@
 [![devDependencies Status](https://david-dm.org/simoneas02/simoneas02.github.io/dev-status.svg)](https://david-dm.org/simoneas02/simoneas02.github.io?type=dev)
 [![Travis CI Status](https://travis-ci.org/simoneas02/simoneas02.github.io.svg?branch=master)](https://travis-ci.org/simoneas02/simoneas02.github.io)
 
-## Run the project locally
+## Run the project local
+
+**0 -** install the basic dependencies
+
+- [NodeJS](https://nodejs.org/en/)
+- [GulpJS](http://gulpjs.com/)
 
 **1 -** Clone the project and install the dependencies:
 
