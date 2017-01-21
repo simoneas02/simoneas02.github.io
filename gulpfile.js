@@ -8,6 +8,7 @@ const connect = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
 const babel = require("gulp-babel");
 const stylint = require('gulp-stylint');
+const ghPages = require('gulp-gh-pages');
 
 // Compile Pug
 // ===========================================
@@ -71,6 +72,15 @@ gulp.task('server', () =>{
     root: './out/',
     livereload: true
   });
+});
+
+// Deploy
+// ===========================================
+gulp.task('deploy', () =>{
+  gulp.src('./out/**/*')
+    .pipe(ghPages({
+      branch: 'master'
+    }));
 });
 
 // More Tasks
