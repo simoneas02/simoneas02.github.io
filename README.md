@@ -3,7 +3,7 @@
 > My personal website.
 
 [![devDependencies Status](https://david-dm.org/simoneas02/simoneas02.github.io/dev-status.svg)](https://david-dm.org/simoneas02/simoneas02.github.io?type=dev)
-[![Travis CI Status](https://travis-ci.org/simoneas02/simoneas02.github.io.svg?branch=master)](https://travis-ci.org/simoneas02/simoneas02.github.io)
+[![Travis CI Status](https://travis-ci.org/simoneas02/simoneas02.github.io.svg?branch=dev)](https://travis-ci.org/simoneas02/simoneas02.github.io)
 
 ## Run the project local
 
@@ -63,7 +63,7 @@ Go to: [localhost:8080](http://localhost:8080/)
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp stylint`: Validate Stylus.
-- `$ gulp deploy`: Deploy for gh-pages.
+- `$ gulp deploy`: Deploy.
 
 ## Versioning
 
@@ -73,8 +73,8 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 Find on our [issues](https://github.com/simoneas02/simoneas02.github.io/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://https://github.com/simoneas02/simoneas02.github.io/issues/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://https://github.com/simoneas02/simoneas02.github.io/issues/blob/dev/CONTRIBUTING.md).
 
 ## License
 
-[MIT License](https://github.com/simoneas02/simoneas02.github.io/blob/master/license.md) © [Simone Amorim](https://simoneas02.github.io)
+[MIT License](https://github.com/simoneas02/simoneas02.github.io/blob/dev/license.md) © [Simone Amorim](https://simoneas02.github.io)
