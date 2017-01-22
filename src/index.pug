@@ -1,20 +1,46 @@
 doctype html
-html(lang="en")
+html(lang="pt-br")
 
-	head
+  head
+    //- style
+    //- ===========================================
+    link(rel="stylesheet" href="assets/styles/main.css")
 
-		//- head metas
-		//- ===========================================
-		include ./includes/head-metas.pug
+    //- meta
+    //- ===========================================
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
-		//- head requests
-		//- ===========================================
-		link(rel="stylesheet" href="assets/styles/main.css")
+    link(rel="icon" href="assets/img/favicon.png")
 
-	body
-		h1 Nós vamos tirar onda nessa bagaça yhayhay
-		h1 Eu te AMO D+
-		h1 Eu te queroooooooo <3
-		h1 Amor queria vc aqui comigo <3
+    //- meta
+    //- ===========================================
+    title My Website
 
-		script(type="text/javascript" src="assets/scripts/index.js")
+  body
+    header(class="header")
+      img(class="profile-picture" alt="Simone Amorim" src="assets/img/profile-picture.jpg")
+      h1(class="heading-lv1") Hello Humanos
+      p(class="text") Mussum Ipsum, cacilds <strong class="bold">Simone Amorim </strong>vidis litro abertis. A ordem dos tratores <strong class="bold">Front-end Developer</strong> não altera o pão duris Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+
+      ul(class="icons-lis")
+        li(class="icon-item")
+          a(class="icon-link" href="#" target="_blank")
+            img(class="icon-svg" src="#" alt="Github")
+
+        li(class="icon-item")
+          a(class="icon-link" href="#" target="_blank")
+            img(class="icon-svg" src="#" alt="Twitter")
+
+        li(class="icon-item")
+          a(class="icon-link" href="#" target="_blank")
+            img(class="icon-svg" src="#" alt="Linkedin")
+
+        li(class="icon-item")
+          a(class="icon-link" href="#" target="_blank")
+            img(class="icon-svg" src="#" alt="Codepen")
+
+    footer(class="footer") Made with love y Simone Amorim
+
+
+    script(type="text/javascript" src="assets/scripts/index.js")

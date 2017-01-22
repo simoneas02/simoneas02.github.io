@@ -12,7 +12,7 @@ const ghPages = require('gulp-gh-pages');
 
 // Compile Pug
 // ===========================================
-gulp.task('pug', () =>{
+gulp.task('pug', () => {
   gulp.src('./src/*.pug')
     .pipe(pug())
     .pipe(gulp.dest('./out/'))
@@ -21,7 +21,7 @@ gulp.task('pug', () =>{
 
 // Stylus features
 // ===========================================
-gulp.task('stylus', () =>{
+gulp.task('stylus', () => {
   gulp.src('./src/assets/styles/*.styl')
     .pipe(stylus({
       compress: true
@@ -30,7 +30,7 @@ gulp.task('stylus', () =>{
     .pipe(connect.reload());
 });
 
-gulp.task('stylint', () =>{
+gulp.task('stylint', () => {
     gulp.src('src/assets/styles/*.styl')
       .pipe(stylint())
       .pipe(stylint.reporter());
@@ -38,7 +38,7 @@ gulp.task('stylint', () =>{
 
 // Babel
 // ===========================================
-gulp.task("babel", () =>{
+gulp.task("babel", () => {
     gulp.src('./src/assets/scripts/*.js')
     .pipe(babel())
     .pipe(gulp.dest('./out/assets/scripts/'))
@@ -47,7 +47,7 @@ gulp.task("babel", () =>{
 
 // Imagemin
 // ===========================================
-gulp.task('imagemin', () =>{
+gulp.task('imagemin', () => {
   gulp.src('./src/assets/img/*')
     .pipe(imagemin(
       [imagemin.gifsicle(), imagemin.jpegtran(), imagemin.optipng(), imagemin.svgo()]
@@ -58,7 +58,7 @@ gulp.task('imagemin', () =>{
 
 // Watch
 // ===========================================
-gulp.task('watch', () =>{
+gulp.task('watch', () => {
   gulp.watch(['./src/*.pug','./src/**/*.pug'], ['pug']);
   gulp.watch(['./src/assets/styles/*.styl'], ['stylus']);
   gulp.watch(['./src/assets/img/*'], ['imagemin']);
@@ -67,7 +67,7 @@ gulp.task('watch', () =>{
 
 // Static server
 // ===========================================
-gulp.task('server', () =>{
+gulp.task('server', () => {
   connect.server({
     root: './out/',
     livereload: true
@@ -76,7 +76,7 @@ gulp.task('server', () =>{
 
 // Deploy
 // ===========================================
-gulp.task('deploy', () =>{
+gulp.task('deploy', () => {
   gulp.src('./out/**/*')
     .pipe(ghPages({
       branch: 'master'
