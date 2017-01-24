@@ -1,8 +1,8 @@
 /* Custom Properties
 =========================================== */
 :root {
-  --external-spacing: 30px;
-  --internal-spacing: 20px;
+  --external-spacing: 20px;
+  --internal-spacing: 10px;
   --main-color: #56038f;
 }
 
@@ -11,6 +11,13 @@ border()
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #212121;
 }
 
 .header {
@@ -24,10 +31,15 @@ border()
 .profile-picture {
   border()
   border-radius: 50%;
-  width: 250px;
   margin: var(--external-spacing) 0;
+  width: 100%;
+  max-width: 200px;
 }
 
+.heading-highlight {
+  color: #fff;
+  font-weight: 300;
+}
 .heading-lv1 {
   border()
   color: var(--main-color);
@@ -38,9 +50,10 @@ border()
 
 .text {
   border()
+  color: #fff;
   margin: var(--external-spacing) auto;
   padding: var(--internal-spacing);
-  text-align: justify;
+  text-align: center;
   width: 100%;
   max-width: 600px;
 }
