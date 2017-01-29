@@ -59,7 +59,7 @@ gulp.task('imagemin', () => {
 // Watch
 // ===========================================
 gulp.task('watch', () => {
-  gulp.watch(['./src/*.pug','./src/**/*.pug'], ['pug']);
+  gulp.watch(['./src/*.pug','./src/**/*.pug','./src/includes/*.html'], ['pug']);
   gulp.watch(['./src/assets/styles/*.styl'], ['stylus']);
   gulp.watch(['./src/assets/img/*'], ['imagemin']);
   gulp.watch(['./src/assets/scripts/*.js'], ['babel']);

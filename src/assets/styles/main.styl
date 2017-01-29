@@ -3,7 +3,7 @@
 :root {
   --external-spacing: 20px;
   --internal-spacing: 10px;
-  --main-color: #56038f;
+  --main-color: #a652c5;
 }
 
 border()
@@ -14,10 +14,8 @@ border()
 }
 
 body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: #212121;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -51,8 +49,8 @@ body {
 .text {
   border()
   color: #fff;
-  font-family: robo;
   font-size: 16px;
+  font-weight: 300;
   margin: var(--external-spacing) auto;
   padding: var(--internal-spacing);
   text-align: center;
@@ -62,8 +60,6 @@ body {
 
 .bold {
   color: var(--main-color);
-  font-family: roboto;
-  font-size: 16px;
 }
 
 .icons-list {
@@ -83,7 +79,8 @@ body {
 }
 
 .icon-svg {
-
+  fill: var(--main-color);
+  width: 40px;
 }
 
 .footer {

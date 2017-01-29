@@ -6,6 +6,7 @@ html(lang="pt-br")
     //- ===========================================
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="assets/styles/main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" )
 
     //- meta
     //- ===========================================
@@ -23,23 +24,26 @@ html(lang="pt-br")
       img(class="profile-picture" alt="Simone Amorim" src="assets/img/profile-picture.jpg")
 
     h1(class="heading-lv1") &lt; <span class="heading-highlight">Hello World </span>/&gt;
-    p(class="text") I'm <strong class="bold">Simone Amorim </strong>, mother and <strong class="bold">studing </strong>for become a <strong class="bold">Front-End </strong>Developer and <strong class="bold">CSS Evangelist </strong>&lt;3 I love <strong class="bold">running </strong>and ride a <strong class="bold">bike</strong>!dd
+
+    p(class="text") I'm <strong class="bold">Simone Amorim </strong>, mother and <strong class="bold">studing </strong>for become a <strong class="bold">Front-End </strong>Developer and <strong class="bold">CSS Evangelist </strong>&lt;3 I love <strong class="bold">running </strong>and ride a <strong class="bold">bike</strong>!
+
     ul(class="icons-list")
-      li(class="icon-item")
-        a(class="icon-link" href="#" target="_blank")
-          img(class="icon-svg" src="#" alt="Github")
 
       li(class="icon-item")
-        a(class="icon-link" href="#" target="_blank")
-          img(class="icon-svg" src="#" alt="Twitter")
+        a(class="icon-link" href="https://github.com/simoneas02" target="_blank")
+          include includes/icon-github.html
 
       li(class="icon-item")
-        a(class="icon-link" href="#" target="_blank")
-          img(class="icon-svg" src="#" alt="Linkedin")
+        a(class="icon-link" href="https://twitter.com/samorim02" target="_blank")
+          include includes/icon-twitter.html
 
       li(class="icon-item")
-        a(class="icon-link" href="#" target="_blank")
-          img(class="icon-svg" src="#" alt="Codepen")
+        a(class="icon-link" href="https://www.linkedin.com/in/simone-amorim-311a3a87?trk=nav_responsive_tab_profile_pic" target="_blank")
+          include includes/icon-linkedin.html
+
+      //- li(class="icon-item")
+      //-   a(class="icon-link" href="http://codepen.io/simoneas02/" target="_blank")
+      //-     img(class="icon-svg" src="#" alt="Codepen")
 
     footer(class="footer") Made with love y Simone Amorim
 
