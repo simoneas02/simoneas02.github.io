@@ -21,6 +21,7 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-pug": "^3.2.0",
     "gulp-stylint": "^4.0.0",
-    "gulp-stylus": "^2.6.0"
+    "gulp-stylus": "^2.6.0",
+    "gulp-vulcanize": "^6.1.0"
   }
 }

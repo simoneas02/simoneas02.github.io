@@ -7,6 +7,7 @@ html(lang="pt-br")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="assets/styles/main.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" )
+    include includes/custom-style.html
 
     //- meta
     //- ===========================================
@@ -15,11 +16,18 @@ html(lang="pt-br")
 
     link(rel="icon" href="assets/img/favicon.png")
 
-    //- meta
+    //- Web Components
+    //- ===========================================
+    link(rel="import" href="../bower_components/made-with-heart/made-with-heart.html")
+    link(rel="import" href="../bower_components/github-corner/github-corner.html")
+
+    //- SEO
     //- ===========================================
     title My Website
 
   body
+    github-corner(href="https://github.com/simoneas02/simoneas02.github.io")
+
     header(class="header")
       img(class="profile-picture" alt="Simone Amorim" src="assets/img/profile-picture.jpg")
 
@@ -45,7 +53,7 @@ html(lang="pt-br")
         //-   a(class="icon-link" href="http://codepen.io/simoneas02/" target="_blank")
         //-     img(class="icon-svg" src="#" alt="Codepen")
 
-    footer(class="footer") Made with love y Simone Amorim
+    footer(class="footer")
+      made-with-heart(href="https://simoneas02.github.io/") Simone Amorim
 
-
-    script(type="text/javascript" src="assets/scripts/index.js")
+    //- script(type="text/javascript" src="assets/scripts/index.js")

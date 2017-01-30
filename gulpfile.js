@@ -9,6 +9,7 @@ const imagemin = require('gulp-imagemin');
 const babel = require("gulp-babel");
 const stylint = require('gulp-stylint');
 const ghPages = require('gulp-gh-pages');
+const vulcanize = require('gulp-vulcanize');
 
 // Compile Pug
 // ===========================================
@@ -17,6 +18,18 @@ gulp.task('pug', () => {
     .pipe(pug())
     .pipe(gulp.dest('./out/'))
     .pipe(connect.reload());
+});
+
+// Vulcanize
+// ===========================================
+gulp.task('vulcanize', () => {
+    gulp.src('out/index.html')
+        .pipe(vulcanize({
+          abspath: '',
+          excludes: [],
+          stripExcludes: false
+        }))
+        .pipe(gulp.dest('out/'))
 });
 
 // Stylus features
@@ -69,7 +82,7 @@ gulp.task('watch', () => {
 // ===========================================
 gulp.task('server', () => {
   connect.server({
-    root: './out/',
+    root: './',
     livereload: true
   });
 });
@@ -87,5 +100,5 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug', 'stylus', 'imagemin', 'babel']);
+gulp.task('build', ['pug','vulcanize','stylus','imagemin','babel']);
 gulp.task('serve', ['watch','server']);
