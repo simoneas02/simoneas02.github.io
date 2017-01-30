@@ -7,10 +7,14 @@
 }
 
 border()
-  border: 0 dashed;
+  border: 0 dashed #fff;
 
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
@@ -22,6 +26,7 @@ body {
   border()
   border-top: 5px solid var(--main-color);
   text-align: center;
+  min-height: calc(100% - 40px - var(--external-spacing));
   margin-bottom: var(--external-spacing);
   padding: var(--internal-spacing);
 }
@@ -80,17 +85,22 @@ body {
 
 .icon-svg {
   fill: var(--main-color);
+  transition: opacity .5s;
   width: 40px;
+}
+
+.icon-svg:hover {
+  opacity: .6;
 }
 
 .footer {
   background: var(--main-color);
   border()
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: var(--external-spacing);
-  padding: var(--internal-spacing);
-  text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  height: 40px;
 }

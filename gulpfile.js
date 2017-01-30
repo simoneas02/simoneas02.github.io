@@ -77,10 +77,12 @@ gulp.task('server', () => {
 // Deploy
 // ===========================================
 gulp.task('deploy', () => {
+  console.log('te amoooo');
   gulp.src('./out/**/*')
     .pipe(ghPages({
       branch: 'master'
     }));
+    console.log('te querooooooo');
 });
 
 // More Tasks
