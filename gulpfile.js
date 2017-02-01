@@ -90,15 +90,14 @@ gulp.task('server', () => {
 // Deploy
 // ===========================================
 gulp.task('deploy', () => {
-  console.log('te amoooo');
   gulp.src('./out/**/*')
     .pipe(ghPages({
       branch: 'master'
     }));
-    console.log('te querooooooo');
 });
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug','vulcanize','stylus','imagemin','babel']);
+gulp.task('build', ['pug','stylus','imagemin','babel']);
 gulp.task('serve', ['watch','server']);
+gulp.task('go', ['vulcanize','deploy']);

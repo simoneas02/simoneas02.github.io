@@ -16,21 +16,28 @@ html(lang="pt-br")
 
     link(rel="icon" href="assets/img/favicon.png")
 
+    //- Variables
+    //- ===========================================
+    - var title = "My Website"
+    - var description = "My personal website"
+    - var url = "https://simoneas02.github.io/"
+    - var image = "https://simoneas02.github.io/assets/img/share.png"
+
     //- Open graph
     //- ===========================================
     meta(property="og:type" content="website")
-    meta(property="og:title" content="My Website")
-    meta(property="og:description" content="My personal website")
-    meta(property="og:url" content="https://simoneas02.github.io/")
-    meta(property="og:image" content="https://simoneas02.github.io/assets/img/share.png")
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:url" content=url)
+    meta(property="og:image" content=image)
 
     //- Twitter cards
     //- ===========================================
     meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:title" content="My Website")
-    meta(name="twitter:description" content="My personal website")
-    meta(name="twitter:url" content="https://simoneas02.github.io/")
-    meta(name="twitter:image" content="https://simoneas02.github.io/assets/img/share.png")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:url" content=url)
+    meta(name="twitter:image" content=image)
 
 
     //- Web Components
@@ -40,8 +47,8 @@ html(lang="pt-br")
 
     //- SEO
     //- ===========================================
-    meta(name="description" content="My personal website")
-    title My Website
+    meta(name="description" content=description)
+    title=title
 
   body
     github-corner(href="https://github.com/simoneas02/simoneas02.github.io")
