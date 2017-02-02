@@ -100,4 +100,3 @@ gulp.task('deploy', () => {
 // ===========================================
 gulp.task('build', ['pug','stylus','imagemin','babel']);
 gulp.task('serve', ['watch','server']);
-gulp.task('go', ['vulcanize','deploy']);
