@@ -4,6 +4,7 @@
   --external-spacing: 20px;
   --internal-spacing: 10px;
   --main-color: #a652c5;
+  --size: 200px;
 }
 
 border()
@@ -23,8 +24,13 @@ body {
 }
 
 .header {
+  align-items: center;
   border()
   border-top: 5px solid var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   min-height: calc(100% - 40px - var(--external-spacing));
   margin-bottom: var(--external-spacing);
@@ -36,7 +42,7 @@ body {
   border-radius: 50%;
   margin: var(--external-spacing) 0;
   width: 100%;
-  max-width: 200px;
+  max-width: var(--size);
 }
 
 .heading-highlight {
@@ -60,7 +66,7 @@ body {
   padding: var(--internal-spacing);
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: calc(var(--size) *3);
 }
 
 .bold {
@@ -86,7 +92,7 @@ body {
 .icon-svg {
   fill: var(--main-color);
   transition: opacity .5s;
-  width: 40px;
+  width: calc(var(--size) /5);
 }
 
 .icon-svg:hover {
