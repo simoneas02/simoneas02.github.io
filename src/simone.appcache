@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2017-02-05:v1
+
+CACHE:
+/
+/index.html
+/assets/img/profile-picture.jpg
+/assets/scripts/main.js
+/assets/styles/main.css
+
+NETWORK:
+*
