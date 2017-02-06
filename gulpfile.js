@@ -32,6 +32,13 @@ gulp.task('vulcanize', () => {
         .pipe(gulp.dest('out/'))
 });
 
+// Move
+// ===========================================
+gulp.task('move', () => {
+    gulp.src('src/simone.appcache')
+        .pipe(gulp.dest('out/'))
+});
+
 // Stylus features
 // ===========================================
 gulp.task('stylus', () => {
@@ -98,5 +105,5 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug','stylus','imagemin','babel']);
+gulp.task('build', ['pug','stylus','imagemin','babel','move']);
 gulp.task('serve', ['watch','server']);
