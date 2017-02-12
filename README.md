@@ -24,6 +24,7 @@ $ bower install
 **2 -** Run the local server:
 
 ```sh
+$ gulp build
 $ gulp server
 ```
 
