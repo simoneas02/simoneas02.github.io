@@ -76,7 +76,8 @@ gulp.task('imagemin', () => {
     .pipe(connect.reload());
 });
 
-// Watch
+// Watch pug files, JS  and stylus files for changes & recompile AND lint :)
+//Watch minify images too
 // ===========================================
 gulp.task('watch', () => {
   gulp.watch(['./src/*.pug','./src/**/*.pug','./src/includes/*.html'], ['pug']);
