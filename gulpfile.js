@@ -10,6 +10,7 @@ const babel = require("gulp-babel");
 const stylint = require('gulp-stylint');
 const ghPages = require('gulp-gh-pages');
 const vulcanize = require('gulp-vulcanize');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Compile Pug
 // ===========================================
@@ -41,6 +42,15 @@ gulp.task('move', () => {
 
 // Stylus features
 // ===========================================
+gulp.task('autoprefixer', () =>
+    gulp.src('./out/assets/styles/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('./out/assets/styles/'))
+);
+
 gulp.task('stylus', () => {
   gulp.src('./src/assets/styles/*.styl')
     .pipe(stylus({
@@ -106,5 +116,5 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug','stylus','imagemin','babel','move']);
+gulp.task('build', ['pug','stylus','imagemin','babel','move', 'autoprefixer']);
 gulp.task('serve', ['watch','server']);
