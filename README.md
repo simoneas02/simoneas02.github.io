@@ -82,8 +82,8 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 Find on our [issues](https://github.com/simoneas02/simoneas02.github.io/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://https://github.com/simoneas02/simoneas02.github.io/issues/blob/dev/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/simoneas02/simoneas02.github.io/issues/blob/dev/CONTRIBUTING.md).
 
 ## License
 
-[MIT License](https://github.com/simoneas02/simoneas02.github.io/blob/dev/license.md) © [Simone Amorim](https://simoneas02.github.io)
+[MIT License](https://github.com/simoneas02/simoneas02.github.io/blob/dev/LICENSE.md) © [Simone Amorim](https://simoneas02.github.io)
