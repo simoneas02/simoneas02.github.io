@@ -28,7 +28,7 @@ $ gulp build
 $ gulp server
 ```
 
-Go to: [localhost:8080](http://localhost:8080/)
+Go to: [localhost:8080](http://localhost:8080/out)
 
 ## Stack
 

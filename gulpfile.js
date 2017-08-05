@@ -12,6 +12,7 @@ const ghPages = require('gulp-gh-pages');
 const vulcanize = require('gulp-vulcanize');
 const autoprefixer = require('gulp-autoprefixer');
 
+
 // Compile Pug
 // ===========================================
 gulp.task('pug', () => {
@@ -35,12 +36,11 @@ gulp.task('vulcanize', () => {
 
 // Move
 // ===========================================
-/*
+
 gulp.task('move', () => {
     gulp.src('src/simone.appcache')
         .pipe(gulp.dest('out/'))
 });
-*/
 
 // Stylus features
 // ===========================================
@@ -118,5 +118,5 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug','stylus','imagemin','babel', 'autoprefixer']);
+gulp.task('build', ['pug','stylus','imagemin','babel', 'move', 'autoprefixer']);
 gulp.task('serve', ['watch','server']);
