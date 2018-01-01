@@ -102,7 +102,7 @@ gulp.task('watch', () => {
 // ===========================================
 gulp.task('server', () => {
   connect.server({
-    root: './',
+    root: './out/',
     livereload: true
   });
 });
@@ -118,5 +118,5 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('build', ['pug','stylus','imagemin','babel', 'move', 'autoprefixer']);
+gulp.task('build', ['pug','vulcanize','stylus','imagemin','babel', 'move', 'autoprefixer']);
 gulp.task('serve', ['watch','server']);
