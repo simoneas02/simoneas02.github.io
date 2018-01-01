@@ -28,7 +28,7 @@ $ gulp build
 $ gulp server
 ```
 
-Go to: [localhost:8080](http://localhost:8080/out)
+Go to: [localhost:8080](http://localhost:8080)
 
 ## Stack
 
@@ -82,7 +82,7 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 Find on our [issues](https://github.com/simoneas02/simoneas02.github.io/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://github.com/simoneas02/simoneas02.github.io/issues/blob/dev/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/simoneas02/simoneas02.github.io/blob/dev/CONTRIBUTING.md).
 
 ## License
 
