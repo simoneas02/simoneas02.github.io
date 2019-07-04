@@ -14,7 +14,7 @@
   "homepage": "https://github.com/simoneas02/simoneas02.github.io#readme",
   "devDependencies": {
     "babel-preset-es2015": "6.24.1",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-autoprefixer": "4.1.0",
     "gulp-babel": "7.0.1",
     "gulp-connect": "5.7.0",
