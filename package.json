@@ -24,6 +24,6 @@
     "gulp-pug": "3.3.0",
     "gulp-stylint": "4.0.2",
     "gulp-stylus": "2.7.0",
-    "gulp-vulcanize": "7.0.0"
+    "gulp-vulcanize": "8.0.0"
   }
 }
