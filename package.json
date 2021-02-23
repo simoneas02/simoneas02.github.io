@@ -16,7 +16,7 @@
     "babel-preset-es2015": "6.24.1",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "6.1.0",
-    "gulp-babel": "7.0.1",
+    "gulp-babel": "8.0.0",
     "gulp-connect": "5.7.0",
     "gulp-gh-pages": "0.5.4",
     "gulp-imagemin": "6.0.0",
